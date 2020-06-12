@@ -99,7 +99,7 @@ func createPost(w http.ResponseWriter, r *http.Request) {
 }
 
 // API Route that updates a post
-// PUT /posts
+// PUT /posts/{id}
 func updatePost(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
 	w.Header().Set("Access-Control-Allow-Headers", "Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
@@ -126,7 +126,7 @@ func updatePost(w http.ResponseWriter, r *http.Request) {
 }
 
 // API Route that deletes a post
-// DELETE /posts/{id
+// DELETE /posts/{id}
 func deletePost(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
